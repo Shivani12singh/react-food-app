@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu-container {
+  padding: 20px;
+  text-align: center;
+  background-color: rgb(245, 247, 250);
+  min-height: 100vh;
+}
+
+.menu-container h1 {
+  margin-bottom: 20px;
+}
+
+/* Grid Layout */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* Card Design */
+.food-card {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+}
+
+.food-card:hover {
+  transform: scale(1.05);
+}
+
+/* Image */
+.food-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Text */
+.food-card h3 {
+  margin: 10px 0 5px;
+}
+
+.price {
+  color: rgb(0, 123, 255);
+  font-weight: bold;
+}
+
+/* Buttons */
+.counter {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.counter button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: rgb(0, 123, 255);
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.counter span {
+  font-weight: bold;
+  font-size: 16px;
+}
